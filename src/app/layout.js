@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "JobSync",
-  description: "Sync your skills to requirements and get started with your job",
+  description: "Sync your skills to requirements and get started with your job.",
 };
 
 export default function RootLayout({ children }) {
