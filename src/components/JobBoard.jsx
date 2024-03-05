@@ -25,7 +25,7 @@ const JobBoard = ({ job }) => {
         </div>
         <p className="text-md text-gray-500 mx-2">{job?.description}</p>
       </div>
-      <div className="space-y-2">
+      <div className="space-y-2 ml-3">
         <p className="text-sm text-gray-500">
           <span className="font-semibold mr-1">Location:</span>
           {job?.city === "Remote" ? "Remote" : `${job?.city}, ${job?.country}`}

@@ -5,11 +5,11 @@ const Banner = () => {
     <div className="flex items-center space-x-4">
       <div className="rounded-full overflow-hidden">
         <Image
-          alt="Company logo"
+          alt="logo"
           className="aspect-square"
-          height="60"
-          src="/placeholder.svg"
-          width="60"
+          height="80"
+          src="/logo.jpeg"
+          width="80"
         />
       </div>
       <div className="space-y-1">
