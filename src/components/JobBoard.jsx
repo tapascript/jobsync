@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import Details from "@/components/Details";
+import { getFormattedNumber } from "@/utils/all-util";
+
 const JobBoard = ({ job }) => {
   console.log(job);
   return (
@@ -20,7 +23,7 @@ const JobBoard = ({ job }) => {
             {job?.employer}
           </Link>
         </div>
-        <p className="text-md text-gray-500">{job?.description}</p>
+        <p className="text-md text-gray-500 mx-2">{job?.description}</p>
       </div>
       <div className="space-y-2">
         <p className="text-sm text-gray-500">
@@ -29,7 +32,7 @@ const JobBoard = ({ job }) => {
         </p>
         <p className="text-sm text-gray-500">
           <span className="font-semibold mr-1">Salary:</span>
-          {job?.salary} USD
+          {getFormattedNumber(job?.salary)} USD
         </p>
         <p className="text-sm text-gray-500">
           <span className="font-semibold mr-1">Posted on:</span>
@@ -37,14 +40,8 @@ const JobBoard = ({ job }) => {
         </p>
       </div>
       <div className="space-y-3">
-        <div className="text-sm text-gray-500">
-          <span className="font-semibold">Requirements:</span>
-          <div className="mt-1">{job?.requirements}</div>
-        </div>
-        <div className="text-sm text-gray-500">
-          <span className="font-semibold">Benefits:</span>
-          <div className="mt-1">{job?.benefits}</div>
-        </div>
+        <Details label="Requirements" information={job?.requirements} />
+        <Details label="Benefits" information={job?.benefits} />
       </div>
       <div className="text-right">
         <Link

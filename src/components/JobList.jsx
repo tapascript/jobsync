@@ -1,5 +1,5 @@
-import JobBoard from "./JobBoard";
-import { getJobs } from "@/app/db/queries";
+import JobBoard from "@/components/JobBoard";
+import { getJobs } from "@/db/queries";
 
 const JobList = async () => {
   const jobs = await getJobs();

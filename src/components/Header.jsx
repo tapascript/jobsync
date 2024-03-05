@@ -1,5 +1,5 @@
-import Banner from "./Banner";
-import Search from "./Search";
+import Banner from "@/components/Banner";
+import Search from "@/components/Search";
 
 const Header = () => {
   return (
