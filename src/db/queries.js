@@ -28,6 +28,7 @@ export async function getJobs() {
       jobs.location = cities.id
       AND
       cities.country = countries.id
+    ORDER BY jobs.posted_date DESC  
     `;
 
   return jobs;
