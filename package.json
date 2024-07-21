@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "next": "14.1.2",
+    "next-auth": "^4.24.7",
     "postgres": "^3.4.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.2",
