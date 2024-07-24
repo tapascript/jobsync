@@ -154,5 +154,8 @@ This is an OSS project by the [tapaScript Community](https://youtube.com/@tapasa
 
 If you found the project helpful, consider supporting us on GitHub.
 
+## Credit
+This project was created from [this Next.js Open Source project template](https://github.com/CreoWis/next-js-launchpad).
+
 
 
