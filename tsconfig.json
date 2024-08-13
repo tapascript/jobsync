@@ -16,6 +16,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "strictNullChecks": true,
+    "noImplicitAny": false,
     "plugins": [
       {
         "name": "next"
